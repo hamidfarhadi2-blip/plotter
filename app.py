@@ -2,7 +2,9 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 import sympy as sp
-
+st.sidebar.header("About the author")
+st.sidebar.write("Author: Hamid Farhadi")
+st.sidebar.write("Contact: hamidfarhadi2@gmail.com.com")
 st.title("📈 Online Function Plotter")
 
 st.write("Enter one or more functions in terms of `x`. Example: `sin(x)`, `x**2 + 3*x`, `exp(x)`")
@@ -56,3 +58,4 @@ if st.button("📊 Plot"):
 
     ax.legend()
     st.pyplot(fig)
+
